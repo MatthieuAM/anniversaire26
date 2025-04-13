@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chasse au trésor</title>
+	<meta charset="utf-8">
+	<style>
+		#hidden-div {
+			display: none;
+		}
+
+
+		
+
+	.button {
+		display: inline-block;
+		background-color: #007bff;
+		color: white;
+		border-radius: 30px;
+		padding: 10px 20px;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		transition: all 0.3s ease-in-out;
+		height: 100px;
+	width: 400px;
+	}
+
+	.button:hover {
+		background-color: #0062cc;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+		transform: translateY(-2px);
+		
+	}
+
+	.hidden-div {
+		display: none;
+		background-color: lightblue;
+		padding: 20px;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.augm{
+
+font-size: 20px;
+color: red;
+
+		}
+</style>
+
+
+<link rel="stylesheet" href="chasse.css">
+
+</head>
+<body>
+	<h1>La Course au Trésor des 26 Ans : Vitesse, Stratégie et Mystères !</h1>
+
+	<p class="fin-chasse">Nouvelle Enigme Surprise ! <br>
+		"Je suis là où l’eau coule à flots, et où les pilotes se détendent avant la prochaine course. Mais attention, un faux pas et tu risques d’attraper un coup de froid ! 
+		<br><br>
+		Où suis-je ?
+<br><br>
+
+
+
+<button class="button" onclick="showDiv()">Bravo tu as resolue l'enigme clic ici </button>
+<div class="hidden-div" id="hidden-div">Je t’aime à toute vitesse, plus fort que le rugissement d’un moteur en pleine accélération. Tu es ma ligne d'arrivée, mon grand prix de chaque jour.</div> <br><br>
+<p class="augm">P.S : CE MESSAGE CONCERNE LE BOUTON AU DESSUS" Clique 2 fois sur le bouton pour afficher l'emplacement si sa ne s'affiche pas </p> 
+</p>
+
+ 
+
+
+<script>
+	function showDiv() {
+		var div = document.getElementById("hidden-div");
+		if (div.style.display === "none") {
+			div.style.display = "block";
+		} else {
+			div.style.display = "none";
+		}
+	}
+</script>
+
+</body>
+</html>
